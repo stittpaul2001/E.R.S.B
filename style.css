@@ -1,4 +1,36 @@
 .nav-bar {
   color: #FF1B6D;
-  line-height: 2cm;
+  border-bottom: #FF1B6D, solid, 2rem;
+  display: inline;
+}
+
+body {
+  background-image: url(background.png);
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+main {
+  justify-content: center;
+  justify-items: center;
+}
+
+.btn-one {
+  background-color: violet;
+  color: black;
+  border: solid;
+  font: bold;
+  align-content: center;
+}
+
+.btn-two {
+  background-color: aqua;
+  color: black;
+  border: solid;
+  font: bold;
+  font-size: large;
+  align-content: center;
 }
