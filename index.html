@@ -6,18 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E.R.S.B. (Extrmely Realistic Sports Bets)</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+      defer</script>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="conatiner-fluid">
     <header class="nav-bar">
-      <div class="row">
-        <div class="col-md-12 text-start">
-          <h1>ERSB</h1>
-          <p class="fs-4 text-start">Extremly Realistic Sports Bets</p>
+      <div class="row border-bottom">
+        <div class="col-md-12">
+          <h1>E.R.S.B.
+            <p class="fs-4">Extremly Realistic Sports Bets</p>
+          </h1>
         </div>
       </div>
     </header>
@@ -26,30 +30,36 @@
   <main class="conatiner-fluid">
     <div class="row align-content-center justify-text-center d-flex">
       <div class="col-md-12 text-center">
-        <div class="fs-4 fw-bold">Bank</div>
-        <div class="rounded-pill bg-primary text-center">
-          <p class="text-end fs-4">$100</p>
+        <div class="rounded-pill bg-primary btn-small">
+          <div class="fs-1 text-center">Bank: $
+
+
+            <span id="bank">100.00</span>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row justify-items-center align-items-center d-flex">
-      <div class="col-md-6">
-        <h3>Team #1</h3>
-        <div class="rounded-pill bg-dark text-center"></div>
-        <button class="rounded-pill btn-one">Bet 5</button>
-        <button class="rounded-pill btn-one">Bet 25</button>
-        <button class="rounded-pill btn-one">Bet 100</button>
-        <button class="rounded-pill btn-one">Bet All</button>
-        <div class="col-md-6">
-          <h3>Team #2</h3>
+      <div class="row justify-items-center align-items-center">
+        <div class="col-md-6 text-center">
+          <h3 class="text-center">Team #1</h3>
           <div class="rounded-pill bg-dark text-center">
+            <p class="fs-1 text-center" id="TeamOne"></p>
           </div>
-          <button class="rounded-pill btn-two">Bet 5</button>
-          <button class="rounded-pill btn-two">Bet 25</button>
-          <button class="rounded-pill btn-two">Bet 100</button>
-          <button class="rounded-pill btn-two">Bet All</button>
-
+          <button class="rounded-pill btn-one" onclick="betTeam(1,5)">Bet 5</button>
+          <button class="rounded-pill btn-one" onclick="betTeam(1,25)">Bet 25</button>
+          <button class="rounded-pill btn-one" onclick="betTeam(1,100)">Bet 100</button>
+          <button class="rounded-pill btn-one" onclick="betTeam(1,bank)">Bet All</button>
         </div>
+        <div class="col-md-6 text-center">
+          <h3 class="text-center">Team #2</h3>
+          <div class="rounded-pill bg-dark text-center">
+            <p class="fs-1 text-center" id="TeamTwo"></p>
+          </div>
+          <button class="rounded-pill btn-two" onclick="betTeam(1,5)">Bet 5</button>
+          <button class="rounded-pill btn-two" onclick="betTeam(1,25)">Bet 25</button>
+          <button class="rounded-pill btn-two" onclick="betTeam(1,100)">Bet 100</button>
+          <button class="rounded-pill btn-two" onclick="betTeam(1,bank)">Bet All</button>
+        </div>
+      </div>
 
   </main>
 

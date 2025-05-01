@@ -2,6 +2,17 @@
   color: #FF1B6D;
   border-bottom: #FF1B6D, solid, 2rem;
   display: inline;
+
+}
+
+.border-bottom {
+  color: #FF1B6D;
+  height: 2%;
+}
+
+.bank {
+  width: fit-content;
+
 }
 
 body {
