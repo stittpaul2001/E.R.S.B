@@ -1,18 +1,20 @@
 .nav-bar {
-  color: #FF1B6D;
-  border-bottom: #FF1B6D, solid, 2rem;
-  display: inline;
-
+  color: #ff1b1b;
 }
 
-.border-bottom {
-  color: #FF1B6D;
-  height: 2%;
+header {
+  border-bottom: solid;
+  border-color: #FF1B6D;
+
 }
 
 .bank {
   width: fit-content;
+}
 
+.bank-button {
+  border: solid;
+  color: black;
 }
 
 body {

@@ -103,8 +103,9 @@ function betTeam2(betAmount) {
     (teamTwoSkill > teamOneSkill)
     bank += betAmount
   }
-  drawBank()
   drawPlayers()
+  drawBank()
+
 }
 
 function betTeam(teamNumber, betAmount) {
@@ -138,14 +139,14 @@ function betTeam(teamNumber, betAmount) {
 }
 
 function checkBank() {
-  if (bank < 0) {
+  if (bank <= 0) {
     window.alert('Out of betting funds! Game Over!!')
     return
   }
 }
 
 function resetBank() {
-  if (bank < 0) {
+  if (bank <= -0) {
     window.alert('GameOver!!!')
   }
   bank = 100
